@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WDM Home Work</title>
+    <link href="./src/bootstrap.min.css" rel="stylesheet" />
+    <link href="./src/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row customH pt-5 text-center">
+        <h1 class="">WDM Home Work</h1>
+
+        <div class="col-6">
+          <h5 style="display: inline">
+            Fatima Bitar <br />
+            ID: fatima_314179
+          </h5>
+        </div>
+        <div class="col-6">
+          <h5 style="display: inline">
+            Ammar Shannar<br />
+            ID: ammar_304564
+          </h5>
+        </div>
+        <div class="col-6">
+          <h5 style="display: inline">
+            Reem Nasser<br />
+            ID: reem_305890
+          </h5>
+        </div>
+        <div class="col-6">
+          <h5 style="display: inline">
+            Daniel Kasem <br />
+            ID: daniel_193658
+          </h5>
+        </div>
+      </div>
+      <!--First Section-->
+      <div class="row mt-3">
+        <h2 class="underLine">Introduction :</h2>
+        <p class="fontP unsetPaddingLeft">
+          On this page, we will build a machine learning model capable of
+          classifying different types of vehicles based on their features. We
+          will utilize a logistic regression model, a decision tree model, and a
+          Naive Bayes model, compare their results, and make a comparison
+          between them.
+        </p>
+      </div>
+
+      <!--2th Section-->
+      <div class="row mt-3">
+        <h2 class="underLine">Logistic regression model</h2>
+        <p class="fontP unsetPaddingLeft">
+          In this section, we will build a logistic regression model, train it,
+          and evaluate the model's performance by obtaining the accuracy,
+          precision, recall, and F1 score values.
+        </p>
+        <img width="100%" height="100%" src="./img/1.png" />
+        <h3 class="p-3">Results :</h3>
+        <div class="text-center">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Accuracy</th>
+                <th scope="col">Precision</th>
+                <th scope="col">Recall</th>
+                <th scope="col">F1 Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>36.76</td>
+                <td>27.16</td>
+                <td>36.76</td>
+                <td>29.60</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!--3th Section-->
+      <div class="row mt-3">
+        <h2 class="underLine">Decision tree model</h2>
+        <p class="fontP unsetPaddingLeft">
+          In this section, we will build a Decision tree model, train it, and
+          evaluate the model's performance by obtaining the accuracy, precision,
+          recall, and F1 score values.
+        </p>
+        <img width="100%" height="100%" src="./img/2.png" />
+        <h3 class="p-3">Results :</h3>
+        <div class="text-center">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Accuracy</th>
+                <th scope="col">Precision</th>
+                <th scope="col">Recall</th>
+                <th scope="col">F1 Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>72.68</td>
+                <td>72.91</td>
+                <td>72.68</td>
+                <td>72.79</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!--4th Section-->
+      <div class="row mt-3">
+        <h2 class="underLine">Naive Bayes model</h2>
+        <p class="fontP unsetPaddingLeft">
+          In this section, we will build a Naive Bayes model, train it, and
+          evaluate the model's performance by obtaining the accuracy, precision,
+          recall, and F1 score values.
+        </p>
+        <img width="100%" height="100%" src="./img/3.png" />
+        <h3 class="p-3">Results :</h3>
+        <div class="text-center">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Accuracy</th>
+                <th scope="col">Precision</th>
+                <th scope="col">Recall</th>
+                <th scope="col">F1 Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>37.96</td>
+                <td>27.84</td>
+                <td>37.96</td>
+                <td>29.79</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!--4th Section-->
+      <div class="row mt-3">
+        <h2 class="underLine">Comparison between model</h2>
+        <p class="fontP unsetPaddingLeft">
+          In this section, we will create a function to compare three models by
+          training them on all dataset rows and displaying the results.
+        </p>
+        <img width="100%" height="100%" src="./img/4.png" />
+        <h3 class="p-3">Results :</h3>
+        <div class="text-center">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">LogisticRegression()</th>
+                <th scope="col">DecisionTreeClassifier()</th>
+                <th scope="col">GaussianNB()</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Accuracy</th>
+                <td>36.8</td>
+                <td>72.2</td>
+                <td>38.2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>
+          As shown in the table results, the Decision Tree Classifier achieved
+          the highest score, which can be attributed to:
+        </h3>
+        <ul>
+          <li>
+            Decision Tree Classifier can capture non-linear relationships in the
+            data, making it suitable for complex decision boundaries. Gaussian
+            NB and Logistic Regression assume linear relationships, which may
+            not always be the case.
+          </li>
+          <li>
+            Decision trees provide feature importance scores, which can help in
+            understanding the relative importance of different features in
+            making predictions. This information is not readily available in
+            Gaussian NB and Logistic Regression.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./src/bootstrap.bundle.min.js" />
+  </body>
+</html>

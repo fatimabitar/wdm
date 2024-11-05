@@ -1,0 +1,40 @@
+.customH{
+    width: 100%;
+    height: 300px;
+    background-color: #2b579a;
+    color: white;
+    font-family: Segoe UI;
+    font-weight: lighter;
+}
+.underLine{
+    padding-left: unset;
+    display: inline;
+    border-bottom: 5px solid #2b579a;
+}
+
+.unsetPaddingLeft{
+    padding-left: unset;
+}
+
+.fontP {
+    font-size: 16px;
+
+}
+.divOfType{
+    display: block;
+    height: 467px;
+
+}
+
+.divOfType2{
+
+    height: 398px;
+
+}
+
+.divOfType4{
+
+    height: 325px;
+
+}
+
